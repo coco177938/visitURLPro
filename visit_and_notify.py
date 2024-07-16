@@ -1,7 +1,7 @@
 import requests
 
 def visit_url():
-    url = "https://d.kstore.space/download/8026/jsm.json"
+    url = "https://d.kstore.space/"
     response = requests.get(url)
     return response.status_code, response.text
 
