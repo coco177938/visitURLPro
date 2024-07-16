@@ -1,7 +1,7 @@
 import requests
 
 def visit_url():
-    url = "https://xn--mpus5ehyb.us.kg/api.php/timming/index.html?enforce=1&name=自动采集"
+    url = "https://d.kstore.space/download/8026/jsm.json"
     response = requests.get(url)
     return response.status_code, response.text
 
