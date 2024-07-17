@@ -1,10 +1,12 @@
 import requests
+import time
 
 def visit_url():
     url = "https://xn--mpus5ehyb.us.kg/api.php/timming/index.html?enforce=1&name=%E8%87%AA%E5%8A%A8%E9%87%87%E9%9B%86"
     try:
         response = requests.get(url)
         response.raise_for_status()
+        time.sleep(10)  # 停留10秒钟
         return f"Visited URL successfully, Status Code: {response.status_code}"
     except requests.RequestException as e:
         return f"Failed to visit URL: {str(e)}"
